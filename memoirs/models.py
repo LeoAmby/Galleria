@@ -1,7 +1,7 @@
 from django.db import models
 
 class Image(models.Model):
-    photo = models.ImageField(upload_to = 'images',)
+    photo = models.ImageField(upload_to = 'images', **kwargs)
     name = models.CharField(max_length=30)
     description = models.TextField()
     location = models.ForeignKey(location)
