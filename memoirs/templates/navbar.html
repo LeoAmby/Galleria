@@ -8,12 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  {% endblock %}
 </head>
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
-            <img src="{%static 'images/logo.png'%}">
+            <img class="logo" src="{%static 'images/logo.png'%}">
             <a class="navbar-brand" href="{% url 'home' %}">Travel</a>
           </div>
         </div>
