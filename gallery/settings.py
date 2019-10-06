@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'galleria',
-        'USER': 'Moringa',
+        'USER': 'moringa',
         'PASSWORD': 'psql'
     }
 }
