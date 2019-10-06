@@ -1,3 +1,6 @@
+
+{% load bootstrap3 %}
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +13,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
+            <img src="{%static 'images/logo.png'%}">
             <a class="navbar-brand" href="{% url 'home' %}">Travel</a>
           </div>
         </div>
