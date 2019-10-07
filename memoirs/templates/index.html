@@ -6,21 +6,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
     <title>Galleria</title>
 </head>
 <body>
     {%block content%}
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row" id="images">
+            <div class="col-md-4" id ="travel">
                     <img class="travel" src="{%static 'images/pass.jpg'%}">
+                    <div class="travel">
+                        <h1>Travel</h1>
+                    </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="family">
                     <img class="family" src="{%static 'images/fam3.jpg'%}">
-            </div>
-            <div class="col-md-4">
+                    <div class="family">
+                            <h1>Family</h1>
+                        </div>
+                </div>
+            <div class="col-md-4" id="cuisine">
                     <img class="cuisine" src="{%static 'images/cui1.jpg'%}">
-            </div>
+                    <div class="cuisine">
+                            <h1>Cuisine</h1>
+                        </div>
+                </div>
 
         </div>
     </div>
