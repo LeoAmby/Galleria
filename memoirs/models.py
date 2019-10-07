@@ -22,8 +22,8 @@ class Image(models.Model):
     location = models.ManyToManyField(Location)
 
     @classmethod
-    def search_by_category(cls, search_term):
-        memoirs = cls.objects.filter(category_icontains=search_term)
+    def search_by_name(cls, search_term):
+        memoirs = cls.objects.filter(name__icontains=search_term)
         return memoirs
         
         

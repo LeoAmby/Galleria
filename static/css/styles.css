@@ -13,24 +13,43 @@
 a {
     color:#2f2054;
 }
+#links {
+    margin-right: 25px;
+    position:static;
+    float:right;
+}
+.navbar-form{
+    position:static;
+    float:right;
+    margin-right: 25px;
+}
+    
+
 .travel  {
     position:relative;
     text-align: center;    
     margin-top: -120px;
+    margin-left:20px;
+    margin-right:20px;
 
 }
 .family{
     position:relative;
     text-align: center;    
     margin-top: -120px;
+    margin-left:20px;
+    margin-right:20px;
 }
 .cuisine{
     position:relative;
     text-align: center;    
     margin-top: -120px;
+    margin-left:20px;
+    margin-right:20px;
 }
 h1 {
     background-color: rgba(36, 1, 36, 0.534);
+    position: relative;
     color:white;
     font-family: 'Didact Gothic', sans-serif;
 }
