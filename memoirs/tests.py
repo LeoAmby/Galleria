@@ -8,3 +8,31 @@ class ImageTestClass(TestCase):
 
     def test_instance(self):
         self.assertTrue(isinstance(self.pic1,Image))
+
+    def test_save_method(self):
+        self.pic1.save_image()
+        images = Image.objects.all.save()
+
+    def tearDown(self):
+        Image.objects.all.delete()
+
+
+class LocationTest(TestCase):
+    def test_instance(self):
+        self.assertTrue(isinstance(self.name,Location))
+        
+
+    def setUp(self):
+        self.new_location = location(name = 'testing')
+        self.new_location.save()
+
+    def tearDown(self):
+        Location.objects.all.delete()
+
+
+class CategoryTest(TestCase):
+    def instance(self):
+        self.assertTrue(isinstance(self.name, Category))
+
+    def tearDown(self):
+        Category.objects.all.delete()
