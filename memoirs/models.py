@@ -4,7 +4,8 @@ class Image(models.Model):
     photo = models.ImageField(upload_to = 'images/', blank=True, null=True)
     name = models.CharField(max_length=30)
     description = models.TextField()
-    # category = models.ForeignKey(category)
+    category = models.ForeignKey(Category)
+    location = model.ForeignKey(Location)
 
 
     def __str__(self):
