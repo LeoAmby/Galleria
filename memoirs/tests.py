@@ -23,7 +23,6 @@ class LocationTest(TestCase):
         
 
     def setUp(self):
-        self.new_location = location(name = 'testing')
         self.new_location.save()
 
     def tearDown(self):

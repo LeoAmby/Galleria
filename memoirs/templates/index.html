@@ -1,1 +1,30 @@
 {% extends 'base.html'%}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galleria</title>
+</head>
+<body>
+    {%block content%}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                    <img class="travel" src="{%static 'images/pass.jpg'%}">
+            </div>
+            <div class="col-md-4">
+                    <img class="family" src="{%static 'images/fam3.jpg'%}">
+            </div>
+            <div class="col-md-4">
+                    <img class="cuisine" src="{%static 'images/cui1.jpg'%}">
+            </div>
+
+        </div>
+    </div>
+    {%endblock%}
+    
+</body>
+</html>
