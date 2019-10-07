@@ -21,6 +21,13 @@ class Image(models.Model):
     category = models.ForeignKey(Category, blank=True, null=True)
     location = models.ManyToManyField(Location)
 
+    @classmethod
+    def search_by_category(cls, search_term):
+        memoirs = cls.objects.filter(category_icontains=search_term)
+        return memoirs
+        
+        
+
 
     def __str__(self):
         return self.name
