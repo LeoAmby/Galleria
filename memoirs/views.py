@@ -3,7 +3,11 @@ from django.http import HttpResponse
 from .models import Image, Location, Category
 
 def home(request):
-    return render(request, 'index.html')
+    images = Image.objects.all()
+    params = {
+        "images":images,
+    }
+    return render(request, 'index.html', params)
 
 
 def travel(request):

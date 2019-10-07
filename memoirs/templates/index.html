@@ -16,8 +16,35 @@
             <div class="col-md-4" id ="travel">
                     <img class="travel" src="{%static 'images/pass.jpg'%}">
                     <div class="travel">
-                        <h1>Travel</h1>
+                            
+                        <!-- Button trigger modal -->
+        <h1 type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Travel</h1>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Travel-Package</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              {% for image in images %}
+                <img src="{{image.photo.url}}" alt="">
+              {% endfor %}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                        
                     </div>
+                    
             </div>
             <div class="col-md-4" id="family">
                     <img class="family" src="{%static 'images/fam3.jpg'%}">
@@ -34,9 +61,7 @@
                 </div>
 
         </div>
-    </div>
-
-    <div class="container">
+        <br><br><br>
             <div class="row" id="images">
                 <div class="col-md-4" id ="travel">
                         <img class="travel" src="{%static 'images/ducks.jpg'%}">
@@ -52,9 +77,7 @@
                     </div>
     
             </div>
-        </div>
-
-        <div class="container">
+         
                 <div class="row" id="images">
                     <div class="col-md-4" id ="travel">
                             <img class="travel" src="{%static 'images/beach.jpg'%}">
@@ -62,10 +85,7 @@
                     </div>
                     <div class="col-md-4" id="family">
                             <img class="family" src="{%static 'images/car.jpg'%}">
-                            <div class="family">
-                                       <h1>Family</h1>
-                                       
-                                </div>
+                            
                         </div>
                     <div class="col-md-4" id="cuisine">
                             <img class="cuisine" src="{%static 'images/siblings.jpg'%}">
