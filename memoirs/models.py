@@ -6,3 +6,15 @@ class Image(models.Model):
     description = models.TextField()
     # location = models.ForeignKey(location)
     # category = models.ForeignKey(category)
+
+
+    def __str__(self):
+        return self.photo
+
+
+class Location(models.Model):
+    place = models.CharField(max_length=30)
+    date = models.DateField()
+
+    def __str__(self):
+        return self.place

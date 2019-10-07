@@ -1,3 +1,15 @@
-logo {
-    height:100px;
+.logo {
+    height:250px;
+    padding-right:10px;
+}
+
+.container-fluid{
+    background-color:#25919d;
+    box-shadow: 5px 10px 5px grey;
+}
+#links {
+    color:#2f2054;
+}
+a {
+    color:#2f2054;
 }
