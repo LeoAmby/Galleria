@@ -54,6 +54,7 @@ h1 {
     font-family: 'Didact Gothic', sans-serif;
 }
 #images  img{
+    height: 250px;
     width: 375px;
     padding:10px;
     box-shadow: 5px 5px 5px grey;
