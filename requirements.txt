@@ -5,7 +5,7 @@ django-braces==0.2.1
 django-heroku==0.3.1
 django-model-utils==1.1.0
 django-oauth2-provider==0.2.4
-djangorestframework==2.3.1
+djangorestframework==3.9.1
 freeze==1.0.10
 logutils==0.3.3
 Pillow==6.2.0
