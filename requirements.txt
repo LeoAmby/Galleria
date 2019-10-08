@@ -9,7 +9,6 @@ djangorestframework==2.3.1
 freeze==1.0.10
 logutils==0.3.3
 Pillow==6.2.0
-pkg-resources==0.0.0
 psycopg2==2.8.3
 Pygments==2.4.2
 python-decouple==3.1
