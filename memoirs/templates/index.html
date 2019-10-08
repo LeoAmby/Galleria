@@ -41,12 +41,28 @@
             
             
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-              <button id="copyId" type="button" class="btn btn-primary" onclick="copyLink;{{image.name}}">Copy-Link</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              <input type="text" value="{{image.photo.url}}" id="copyId">
+              <button id="copyBtn" type="button" class="btn btn-primary">Copy-Link</button>
+              
+              
             </div>
           </div>
         </div>
       </div>
+      <script>
+
+        const copyId =document.getElementById("copyId");
+        const copyBtn = document.getElementById("copyBtn");
+        copyBtn.onclick = function(){
+          copyId.select();
+          document.execCommand("Copy");
+          alert("Copied the Text");
+        }
+
+  
+      </script>
+  
       {% endfor %}
                         
                     
