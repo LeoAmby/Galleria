@@ -3,6 +3,8 @@
 # AUTHOR
     Leonidah Mwamto
 
+# SCREENSHOT
+    <>
 # DESCRIPTION
     Galleria is a web App which is created using django. In it the audiences are in a position to view various photos on the memoir links which express different times, locations, and activities represented by each photo. In the admin section, one is also in a position to create, delete and update a photo.
 
@@ -39,4 +41,4 @@
     * Github and Heroku opensource accounts for task management and deployment respectively
 
 # LICENCE
-    [MIT](https://github.com/LeoAmby/Galleria/blob/master/LICENSE) 
+    [MIT]('https://github.com/LeoAmby/Galleria/blob/master/LICENSE') 

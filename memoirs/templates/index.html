@@ -35,12 +35,14 @@
             </div>
             <div class="modal-body">
                 {{image.details}}
+                <p>Category: {{image.category}}</p>
+                <p>Location: {{image.location}}</p>
             </div>
             
             
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Copy-Link</button>
+              <button type="button" class="btn btn-primary" onclick="copyLink;{{image.name}}">Copy-Link</button>
             </div>
           </div>
         </div>

@@ -3,7 +3,6 @@ from django.db import models
 class Location(models.Model):
     place = models.CharField(max_length=30)
     date = models.DateField()
-    # image = models.ForeignKey(Image)
 
     def __str__(self):
         return self.place
@@ -19,7 +18,8 @@ class Image(models.Model):
     name = models.CharField(max_length=30)
     details = models.TextField()
     category = models.ForeignKey(Category, blank=True, null=True)
-    location = models.ManyToManyField(Location)
+    location = models.ForeignKey(Location, blank=True, null=True)
+
 
     @classmethod
     def search_by_name(cls, search_term):
