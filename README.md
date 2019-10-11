@@ -1,4 +1,4 @@
-##GALLERIA##
+## GALLERIA ##
 
 # AUTHOR
     Leonidah Mwamto
