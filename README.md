@@ -41,4 +41,4 @@
     * Github and Heroku opensource accounts for task management and deployment respectively
 
 # LICENCE
-    [MIT]('https://github.com/LeoAmby/Galleria/blob/master/LICENSE') 
+    [MIT](https://github.com/LeoAmby/Galleria/blob/master/LICENSE) 
